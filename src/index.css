@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --pink-light: #ffe4e6;
+  --pink-medium: #fda4af;
+  --pink-hot: #fb7185;
+  --red-main: #e11d48;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #fce7f3 0%, #ffe4e6 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  color: #333;
+}
+
+h1, .romantic-text {
+  font-family: 'Dancing Script', cursive;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(225, 29, 72, 0.1);
+  border-radius: 24px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-yes {
+  background-color: var(--red-main);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+.btn-no {
+  background-color: var(--pink-hot);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+.btn-yes:hover, .btn-no:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.2);
+}
+
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.pointer-events-none { pointer-events: none; }
+.overflow-hidden { overflow: hidden; }
+.absolute { position: absolute; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.flex-col { flex-direction: column; }
+.gap-4 { gap: 1rem; }
+.p-8 { padding: 2rem; }
+.text-center { text-align: center; }
+.w-full { width: 100%; }
+.max-w-md { max-width: 28rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.rounded-2xl { border-radius: 1rem; }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
